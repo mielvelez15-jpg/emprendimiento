@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI emprendimiento</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Surrealista | Arte fuera de la realidad</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes Google Fonts: Playfair Display para elegancia y Plus Jakarta Sans para lectura moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="logo">
+      <span>ONÍRICA</span> GALERÍA
+    </div>
+    <nav class="nav">
+      <a href="#galeria">Colección</a>
+      <a href="#nosotros">El Concepto</a>
+      <a href="#contacto" class="btn-nav">Adquirir Obra</a>
+    </nav>
+  </header>
+
+  <!-- Sección Hero / Portada -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="tagline">Arte Surrealista & Ediciones Exclusivas</p>
+      <h1>Donde los sueños rompen el lienzo.</h1>
+      <p class="hero-description">Explora piezas únicas diseñadas para transformar tus espacios en portales hacia universos imposibles.</p>
+      <a href="#galeria" class="btn-primary">Explorar Galería</a>
+    </div>
+  </section>
+
+  <!-- Galería de Cuadros -->
+  <main id="galeria" class="gallery-section">
+    <div class="section-title">
+      <h2>Obras Destacadas</h2>
+      <p>Piezas originales listas para habitar tu espacio</p>
+    </div>
+
+    <div class="grid-gallery">
+      <!-- Tarjeta 1 -->
+      <article class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Cuadro Surrealista - El Despertar del Tiempo">
+          <span class="badge">Disponible</span>
+        </div>
+        <div class="card-info">
+          <h3>El Despertar del Tiempo</h3>
+          <p class="details">Óleo sobre lienzo — 120 x 90 cm</p>
+          <div class="card-footer">
+            <span class="price">$450 USD</span>
+            <a href="https://wa.me/5412345678?text=Hola,%20me%20interesa%20el%20cuadro%20'El%20Despertar%20del%20Tiempo'" target="_blank" class="btn-card">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Cuadro Surrealista - Metamorfosis Fluida">
+          <span class="badge">Exclusivo</span>
+        </div>
+        <div class="card-info">
+          <h3>Metamorfosis Fluida</h3>
+          <p class="details">Acrílico y textura — 100 x 100 cm</p>
+          <div class="card-footer">
+            <span class="price">$520 USD</span>
+            <a href="https://wa.me/5412345678?text=Hola,%20me%20interesa%20el%20cuadro%20'Metamorfosis%20Fluida'" target="_blank" class="btn-card">Consultar</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=800&q=80" alt="Cuadro Surrealista - La Ciudad Suspendida">
+          <span class="badge">Edición Única</span>
+        </div>
+        <div class="card-info">
+          <h3>La Ciudad Suspendida</h3>
+          <p class="details">Técnica mixta — 150 x 100 cm</p>
+          <div class="card-footer">
+            <span class="price">$680 USD</span>
+            <a href="https://wa.me/5412345678?text=Hola,%20me%20interesa%20el%20cuadro%20'La%20Ciudad%20Suspendida'" target="_blank" class="btn-card">Consultar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Sección Manifiesto / Sobre el emprendimiento -->
+  <section id="nosotros" class="manifesto">
+    <div class="manifesto-content">
+      <h2>El Arte de Desafiar lo Real</h2>
+      <p>Cada una de nuestras obras es una invitación a cuestionar los límites de la percepción. No vendemos simples lienzos decorativos; entregamos fragmentos de imaginación que transforman por completo la energía de cualquier ambiente.</p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer id="contacto" class="footer">
+    <div class="footer-quote">
+      <p class="quote">"El surrealismo no es solo una forma de pintar, es la libertad absoluta de crear mundos donde nuestra alma se reconoce sin explicaciones."</p>
+    </div>
     
+    <div class="footer-bottom">
+      <p>&copy; 2026 Onírica Galería. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5412345678?text=Hola,%20quiero%20más%20información%20sobre%20tus%20cuadros%20surrealistas" class="whatsapp-btn" target="_blank" aria-label="Contacto por WhatsApp">
+    <svg viewBox="0 0 32 32" class="whatsapp-icon">
+      <path d="M16 2a13.9 13.9 0 0 0-11.9 21.2L2 30l7-1.8A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.2-4.4 1.1 1.2-4.3-.3-.4a11.6 11.6 0 1 1 9.8 5.4zm6.4-8.7c-.3-.2-2-.1-2.3-1.1s-.6-.8-.8-.8h-.7a1.4 1.4 0 0 0-1 .5 5.8 5.8 0 0 0-1.8 4.3 10.2 10.2 0 0 0 2.2 5.4c.3.4 3 4.6 7.3 6.4 3.6 1.5 4.3 1.2 5.1 1.1a4.3 4.3 0 0 0 2.9-2 3.5 3.5 0 0 0 .2-2c-.1-.2-1.8-1.1-2.1-1.2z" />
+    </svg>
+    <span class="whatsapp-text">Consultar obras</span>
+  </a>
+
 </body>
 </html>
